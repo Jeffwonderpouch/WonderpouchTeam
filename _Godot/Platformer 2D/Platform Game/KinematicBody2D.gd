@@ -25,6 +25,7 @@ func _physics_process(delta):
 				jumps = jumps - 1
 			else:
 				motion.y = jump_force
+				jumps = jumps - 1
 		else:
 			motion.y += gravity		
 	if is_on_floor():
