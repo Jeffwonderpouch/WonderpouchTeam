@@ -3,11 +3,11 @@ extends KinematicBody2D
 # Movement Variables
 const UP = Vector2(0, -1)
 var motion = Vector2()
-var speed = 190
+export var speed = 190
 
 # Jumping Variables
-var gravity = 9
-var jump_force = -350
+export var gravity = 9
+export var jump_force = -350
 
 func _physics_process(delta):
 	motion.y += gravity;
